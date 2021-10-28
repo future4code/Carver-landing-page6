@@ -1,0 +1,52 @@
+* {
+    margin:0;
+    padding:0;
+}
+header {
+
+    display: flex;
+    background-color: rgb(253, 227, 227);
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    padding: 0 20px; 
+    border: black;
+    
+}
+
+#divPesquisar{
+    background-color:#E0EEEE;
+    border:solid 2px #5F9EA0;
+    border-radius:10px;
+    width:300px;
+    height:30px;
+  }
+  
+  #txtPesquisa{
+    float:left;
+    background-color:transparent;
+    padding-left:5px;
+    font-size:18px;
+    border:none;
+    height:32px;
+    width:191px;
+  }
+  
+  #btnPesquisa{
+    border:none;
+    float:left;
+    height:32px;
+    border-radius:0 7px 7px 0;
+    width:104px;
+    font-weight:bold;
+    background:#5F9EA0;
+  }
+  
+  #divBusca img{
+    float:left;
+  }
+  
+  img{ 
+      width:25px; 
+    margin-right:5px;
+ }

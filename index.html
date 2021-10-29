@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,13 +8,28 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header></header>
     <nav id="menu-principal">
-        <p>HOME</p>
-        <p>CATEGORIAS</p>
-        <p>SUGESTÕES</p>
-        <p>SEU ENDEREÇO</p>
+        <a href="/index.html">
+            <p>HOME</p>
+        </a>
+        <a href="#primeiro-titulo">
+            <p>CATEGORIAS</p>
+        </a>
+        <a href="#segundo-titulo">
+            <p>PROMOÇÕES</p>
+        </a>
+        <a href="#div-formulario">
+            <p>CADASTRE SEU ENDEREÇO</p>
+        </a>
+        <a href="#div-quem-somos">
+            <p>QUEM SOMOS</p>
+        </a>
+        <a href="">
+            <p>CONTATO</p>
+        </a>
     </nav>
 
     <main id="container-main">
@@ -22,44 +38,104 @@
         </div>
         <section id="secao-tipos-comida">
             <div class="div-img-descricao">
-                <img class="imagem-tipos"src="/img/comida-tradicional.png" alt="">
+                <img class="imagem-tipos" src="/img/cafe1.jpg" alt="imagem" title="Café da manhã">
                 <p>Café da manhã</p>
             </div>
             <div class="div-img-descricao">
-                <img class="imagem-tipos"src="/img/almoco.png" alt="">
+                <img class="imagem-tipos" src="/img/almoco4.jpg" alt="imagem" title="Comida tradicional">
                 <p>Comida tradicional</p>
             </div>
             <div class="div-img-descricao">
-                <img class="imagem-tipos"src="/img/jantar-simbolo.jpg" alt="">
+                <img class="imagem-tipos" src="/img/jantar2.jpg" alt="imagem" title="Jantar">
                 <p>Jantar</p>
             </div>
             <div class="div-img-descricao">
-                <img class="imagem-tipos"src="/img/fast-food-simbolo.jpg" alt="">
+                <img class="imagem-tipos" src="/img/fast-food-hamburguer.jpg" alt="imagem" title="Fast food">
                 <p>Fast food</p>
             </div>
         </section>
         <div id="segundo-titulo">
-            <h2>Sugestões para você</h2>
+            <h2>Promoções para você</h2>
         </div>
         <section id="secao-anuncios">
-            <div>
-                anuncio 1
+            <div class="div-imagem-anuncio">
+                <img src="/img/promocao-burguer.jpg" alt="imagem">
             </div>
-            <div>
-                anuncio 2
+            <div class="div-imagem-anuncio">
+                <img src="/img/promocao-burguer.jpg" alt="imagem">
             </div>
-            <div>
-                anuncio 3
+            <div class="div-imagem-anuncio">
+                <img src="/img/promocao-burguer.jpg" alt="imagem">
             </div>
         </section>
 
-        <div>
-            
+        <div id="div-formulario">
+            <form action="" id="secao-formulario">
+                <h3>Cadastre seu endereço de entrega:</h3>
+
+                <label for="cep">CEP *
+                    <input class="input_text" type="number" name="CEP" id="cep">
+                </label>
+
+                <label for="logradouro">Logradouro *
+                    <input class="input_text" type="text" name="logradouro" id="logradouro">
+                </label>
+
+                <label for="bairro">Bairro *
+                    <input class="input_text" type="text" name="bairro" id="bairro">
+                </label>
+
+                <label for="cidade">Cidade *
+                    <input class="input_text" type="text" name="cidade" id="cidade">
+                </label>
+
+                <label for="estado">Estado *
+                    <input class="input_text" type="text" name="estado" id="estado">
+                </label>
+
+                <label for="numero">Número *
+                    <input class="input_text" type="number" name="numero" id="numero">
+                </label>
+
+                <button id="button" type="submit">Cadastrar</button>
+            </form>
         </div>
+        <div id="div-quem-somos">
+            <H2>QUEM SOMOS?</H2>
+            <p>
+                O 4Food é um projeto de uma grande rede de supermercados que está buscando se digitalizar e criar um
+                sistema de compras e entregas recorrentes por aplicativo
+            </p>
+        </div>
+
+        <section id="section-proposta">
+            <div id="texto-esquerdo">
+                <h3>NOSSA PROPOSTA</h3>
+
+                <P>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat accusantium dolorum voluptates
+                    neque,
+                    sapiente veniam perferendis minus quis assumenda maxime, ab, vel fugit inventore? Ab esse deserunt
+                    iure
+                    dolorum aliquam?
+                </P>
+            </div>
+            <div id="texto-direito">
+                <H3>NOSSO MÉTODO</H3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus molestiae illum id eveniet
+                    repudiandae, ea, enim, cumque eos repellat nesciunt modi? Saepe accusamus non eveniet alias ad id
+                    optio
+                    explicabo.
+                </p>
+            </div>
+        </section>
     </main>
-    
+
+
 
 
     <footer></footer>
 </body>
+
 </html>

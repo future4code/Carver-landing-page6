@@ -57,18 +57,6 @@ header {
  }
 
 
-
-
-
-
-
-body{
-    
-}
-
-header{
-}
-
 #menu-principal{
     display: flex;
     justify-content: space-evenly;
@@ -149,8 +137,8 @@ header{
 
 
 #secao-anuncios{
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     padding-bottom: 150px;
     /* background-color: cadetblue; */
 }
@@ -161,7 +149,7 @@ header{
 }
 
 .div-imagem-anuncio img{
-    width: 60%;
+    width: 80%;
     border-radius: 20px;
 }
 
@@ -301,3 +289,48 @@ header{
 #texto-direito p{
     margin-top: 25px;
 }
+
+
+
+/* RESPONSIVIDADE */
+
+@media screen and  (max-device-width : 480px) {
+    /* celulares */
+    #menu-principal{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        height: 70px;
+    }
+
+    #primeiro-titulo{
+        padding-bottom: 50px;
+    }
+    #secao-tipos-comida{
+        display: flex;
+        flex-direction: column;
+        transform: scale(1.5);
+    }
+
+    #secao-anuncios{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+    }
+    .div-imagem-anuncio{
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        padding-bottom: 20px;
+        transform: scale(0.8);
+    }
+
+    #div-formulario{
+        display: flex;
+
+    }
+    #secao-formulario{
+        width: 80%;
+    }
+
+    }
+    

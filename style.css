@@ -1,0 +1,360 @@
+.header-grid {
+  display: grid;
+  grid-template-columns: 1fr 3fr 3fr 3fr;
+  grid-template-rows: 39vh;
+}
+
+header {
+  background-color: beige;
+}
+
+.header-logo{
+  place-self: center;
+}
+
+.header-logo > img {
+  width: 15vw;
+  height: 41vh;
+}
+
+.header-pesquisar {
+  place-self: center;
+}
+
+.header-imgconta {
+  place-self: center;
+}
+
+.header-imgconta > img {
+  width: 6vw;
+  height: 12vh;
+}
+
+.header-imgcarrinho {
+  place-self: center;
+}
+
+.header-imgcarrinho > img {
+  width: 6vw;
+  height: 12vh;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  justify-items: center;
+}
+
+footer {
+  background-color: beige;
+}
+
+.footer-grid {
+  display: grid;
+  justify-items: start;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 39vh;
+}
+
+.footer-logo {
+  place-self: center;
+}
+
+.footer-logo > img {
+  width: 15vw;
+  height: 41vh;
+}
+
+.footer-address {
+  place-self: center;
+}
+
+body{
+    width: 100vw;
+    min-height: 100vh;
+}
+
+header{
+}
+
+
+#menu-principal{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 40px;
+    background-color: #a38879;
+}
+#menu-principal a{
+    text-decoration: none;
+    color: white;
+    font-size: 0.8em;
+    
+}
+#menu-principal a:hover{
+    text-decoration:underline;
+}
+#menu-principal a:active{
+    color: #7a4426;
+}
+
+#container-main{
+    /* display: grid;
+    align-items: center; */
+}
+
+
+/* ESTILO CATEGORIAS */
+
+#primeiro-titulo{
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+    color: #7a4426;
+}
+
+#secao-tipos-comida{
+    display: flex;
+    justify-content: center;
+    /* background-color: rgba(167, 113, 113, 0.329); */
+    padding-top: 70px;
+    gap: 15px;
+    color: #7a4426;
+}
+
+.imagem-tipos{
+    width: 20vw;
+    height: 15vw;
+    border-radius: 50px;
+    box-shadow: 2px 2px 5px brown;
+}
+.imagem-tipos:hover{
+    transform: scale(1.02);
+    transition: .5s ease-in-out;
+    /* zoom: 105%; */
+}
+
+.div-img-descricao{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.div-img-descricao p{
+    padding-top: 10px;
+}
+
+/* ESTILO ANUNCIOS */
+
+#segundo-titulo{
+    display: flex;
+    justify-content: center;
+    /* background-color: aqua; */
+    text-align: center;
+    padding-top: 150px;
+    padding-bottom: 50px;
+    color: #7a4426;
+}
+
+
+#secao-anuncios{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-bottom: 150px;
+    /* background-color: cadetblue; */
+}
+.div-imagem-anuncio{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.div-imagem-anuncio img{
+    width: 80%;
+    border-radius: 20px;
+}
+
+/* ESTILO FORMULARIO */
+
+#div-formulario{
+    display: grid;
+    justify-content: end;
+    grid-template-columns: 1fr 1fr;
+    background-image: url(/img/back-ground-cadastro.png);
+    background-size: cover;
+    background-position: center center;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+
+#secao-formulario{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    grid-column: 2/3;
+    margin:0 auto;
+    width: 50vw;
+    background:#474141;
+    border:1px solid #000000;
+    border-radius: 20px;
+    transform: scale(0.7);
+    max-width: 500px;
+}
+
+#secao-formulario h3{
+    color:#ffffff;
+    font-size:18px;
+    text-transform:uppercase;
+    padding:5px 0 5px 5px;
+    border-bottom:1px solid #161712;
+    border-top:1px solid #161712;
+}
+
+#secao-formulario label{
+    display: flex;
+    justify-content: flex-end;
+    color: white;
+    width:100%;
+    background:#161515;
+    border-top:1px solid #262626;
+    border-bottom:1px solid #161712;
+    padding:5px 0 10px 0;
+
+}
+.input_text {
+    padding:5px 10px;
+    width:50%;
+    background:#474141;
+    border-bottom: 1px double #171717;
+    border-top: 1px double #171717;
+    border-left:1px double #171717;
+    border-right:1px double #1a0a0a;
+    color: white;
+    border-radius: 10px;
+}
+
+#button{
+    margin:10px 0 10px 0;
+    padding:4px 10px;
+    background:#f3ebeb;
+    border:0px;
+    width: 20%;
+    min-width: 75px;
+    border-bottom: 1px double #171717;
+    border-top: 1px double #171717;
+    border-left:1px double #171717;
+    border-right:1px double #171717;
+    border-radius: 20px;
+}
+
+
+/* ESTILO QUEM SOMOS */
+
+#div-quem-somos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 20px solid rgb(196, 182, 182);
+    padding-top: 150px;
+    background-image: url(/img/background-quem-somos.jpg);
+    background-size: cover;
+    background-position: center center;
+    padding-bottom: 150px;
+}
+
+#div-quem-somos h2{
+    color: white;
+}
+
+#div-quem-somos p{
+    width: 50%;
+    margin-top: 50px;
+    color: white;
+}
+
+/* ESTILO NOSSA PROPOSTA */
+
+#section-proposta{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    border-top: 20px solid rgb(196, 182, 182);
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+#texto-esquerdo{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    grid-column: 2/3;
+}
+#texto-esquerdo h3{
+    color: brown;
+}
+#texto-esquerdo p{
+    text-align: right;
+    margin-top: 25px;
+}
+
+#texto-direito{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    grid-column: 3/4;
+}
+#texto-direito h3{
+    color: brown;
+}
+#texto-direito p{
+    margin-top: 25px;
+}
+
+
+
+/* RESPONSIVIDADE */
+
+@media screen and  (max-device-width : 480px) {
+    /* celulares */
+    #menu-principal{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        height: 70px;
+    }
+
+    #primeiro-titulo{
+        padding-bottom: 50px;
+    }
+    #secao-tipos-comida{
+        display: flex;
+        flex-direction: column;
+        transform: scale(1.5);
+    }
+
+    #secao-anuncios{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+    }
+    .div-imagem-anuncio{
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        padding-bottom: 20px;
+        transform: scale(0.8);
+    }
+
+    #div-formulario{
+        display: flex;
+
+    }
+    #secao-formulario{
+        width: 80%;
+    }
+
+    }
+    
+
+

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+     <header>
+        <div class="header-grid">
+            <div class="header-logo">
+                  <img src="4FOOD.png" alt="4food">
+            </div>
+            <div class="header-imgconta">
+                MINHA CONTA
+            </div>
+            <div class="header-imgcarrinho">
+                MEU CARRINHO
+            </div>
+            <div class="header-pesquisar">
+                <input type="text" placeholder="Pesquisar..."/>
+                <button>Pesquisar</button>
+            </div>
+        </div>
+      </header>
+      <nav id="menu-principal">
+        <a href="/index.html">
+            <p>HOME</p>
+        </a>
+        <a href="#primeiro-titulo">
+            <p>CATEGORIAS</p>
+        </a>
+        <a href="#segundo-titulo">
+            <p>PROMOÇÕES</p>
+        </a>
+        <a href="#div-formulario">
+            <p>CADASTRE SEU ENDEREÇO</p>
+        </a>
+        <a href="#div-quem-somos">
+            <p>QUEM SOMOS</p>
+        </a>
+        <a href="">
+            <p>CONTATO</p>
+        </a>
+    </nav>
+
+    <main id="container-main">
+        <div id="primeiro-titulo">
+            <h2>Navegue pelas categorias mais acessadas</h2>
+        </div>
+        <section id="secao-tipos-comida">
+            <div class="div-img-descricao">
+                <img class="imagem-tipos" src="/img/cafe1.jpg" alt="imagem" title="Café da manhã">
+                <p>Café da manhã</p>
+            </div>
+            <div class="div-img-descricao">
+                <img class="imagem-tipos" src="/img/almoco4.jpg" alt="imagem" title="Comida tradicional">
+                <p>Comida tradicional</p>
+            </div>
+            <div class="div-img-descricao">
+                <img class="imagem-tipos" src="/img/jantar2.jpg" alt="imagem" title="Jantar">
+                <p>Jantar</p>
+            </div>
+            <div class="div-img-descricao">
+                <img class="imagem-tipos" src="/img/fast-food-hamburguer.jpg" alt="imagem" title="Fast food">
+                <p>Fast food</p>
+            </div>
+        </section>
+
+
+        <div id="segundo-titulo">
+            <h2>Promoções para você</h2>
+        </div>
+        <section id="secao-anuncios">
+            <div class="div-imagem-anuncio">
+                <img src="/img/promocao-almoco.png" alt="imagem">
+            </div>
+            <div class="div-imagem-anuncio">
+                <img src="/img/promocao2.png" alt="imagem">
+            </div>
+            <div class="div-imagem-anuncio">
+                <img src="/img/promocao-hamburguer.png" alt="imagem">
+            </div>
+        </section>
+
+
+        <div id="div-formulario">
+            <form action="" id="secao-formulario">
+                <h3>Cadastre seu endereço de entrega:</h3>
+
+                <label for="cep">CEP *
+                    <input class="input_text" type="number" name="CEP" id="cep">
+                </label>
+
+                <label for="logradouro">Logradouro *
+                    <input class="input_text" type="text" name="logradouro" id="logradouro">
+                </label>
+
+                <label for="bairro">Bairro *
+                    <input class="input_text" type="text" name="bairro" id="bairro">
+                </label>
+
+                <label for="cidade">Cidade *
+                    <input class="input_text" type="text" name="cidade" id="cidade">
+                </label>
+
+                <label for="estado">Estado *
+                    <input class="input_text" type="text" name="estado" id="estado">
+                </label>
+
+                <label for="numero">Número *
+                    <input class="input_text" type="number" name="numero" id="numero">
+                </label>
+
+                <button id="button" type="submit">Cadastrar</button>
+            </form>
+        </div>
+
+
+        <div id="div-quem-somos">
+            <H2>QUEM SOMOS?</H2>
+            <p>
+                O 4Food é um projeto de uma grande rede de restaurantes que está buscando se digitalizar e criar um
+                sistema de compras e entregas recorrentes por aplicativo
+            </p>
+        </div>
+
+
+        <section id="section-proposta">
+            <div id="texto-esquerdo">
+                <h3>NOSSA PROPOSTA</h3>
+
+                <P>
+                    comida brasileira, autoral, orgânica e contemporânea. Tendo como foco ingredientes de alta qualidade
+                    e um atendimento elegante, mas casual
+                </P>
+            </div>
+            <div id="texto-direito">
+                <H3>UM POUCO SOBRE NÓS</H3>
+                <p>
+                    Entre nossos conceitos centrais está a inclusividade. Uma experiência para todos, num restaurante
+                    que acolhe os mais diferentes paladares, níveis sociais e culturais. Uma cozinha que, é feita com os
+                    olhos no mundo e os pés sempre firmados no Brasil.
+                </p>
+            </div>
+        </section>
+    </main>
+
+      <footer>
+        <div class="footer-grid">
+            <div class="footer-logo">
+                <img src="4food.png" alt="logotipo">
+            </div>
+            <div class="footer-address">
+                <p>Endereço: rua Gaivota, 334, São Paulo-SP, CEP 988760</p>
+            </div>
+            <div class="footer-redessociais">
+                <p>Siga-nos nas redes sociais</p>
+                <a href="http://www.facebook.com" target="_blank">
+                    <img style="width: 6vw; height: 12vh;" src="facebook.png" alt="nosso facebook">
+                </a>
+                <a href="http://www.facebook.com"target="_blank">
+                    <img style="width: 6vw; height: 12vh;" src="instagram.png" alt="nosso instagram">
+                </a>
+            </div>
+        </div>
+      </footer>
+  </body>
+</html>
